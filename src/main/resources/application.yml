@@ -1,0 +1,21 @@
+spring.application.name=hiring
+spring:
+  datasource:
+    url: jdbc:h2:mem:finalquerydb;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+app:
+  candidate:
+    name: "John Doe"
+    regNo: "REG12347"
+    email: "john@example.com"
+
+  endpoints:
+    generateWebhook: "https://bfhldevapigw.healthrx.co.in/hiring/generateWebhook/JAVA"
+    submitAnswer: "https://bfhldevapigw.healthrx.co.in/hiring/testWebhook/JAVA"
